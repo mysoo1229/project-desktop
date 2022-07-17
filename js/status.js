@@ -1,6 +1,7 @@
 const clock = document.querySelector('.sectionClock .clock');
 const userLocation = document.querySelector('.sectionGeo .location span');
 const userWeather = document.querySelector('.sectionGeo .weather span');
+const API_KEY = "167c08624b65be649cfc2ff4b093dd4a";
 
 const setStatus = {
   clock: function() {
