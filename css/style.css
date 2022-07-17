@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: top;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+header,
+main,
+footer,
+nav,
+aside,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+}
+
+input:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.wrapper {
+  padding-top: 40px;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper * {
+  font-family: "VT323", sans-serif;
+}
+
+.wrapper.wrapperDash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0;
+}
+
+.windows {
+  position: relative;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.windowsBorder {
+  border-top: 3px solid #e6e6e6;
+  border-right: 3px solid #808080;
+  border-bottom: 3px solid #808080;
+  border-left: 3px solid #e6e6e6;
+}
+
+.windowsHeader {
+  position: relative;
+  background: #02268e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.windowsHeader h1,
+.windowsHeader p {
+  padding: 5px 10px;
+  font-size: 22px;
+}
+
+.windowsHeader i {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  background: #ccc;
+}
+
+.windowsHeader i::before, .windowsHeader i::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 11px;
+  width: 2px;
+  height: 16px;
+  background: #000;
+}
+
+.windowsHeader i::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.windowsHeader i::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.windowsContents {
+  position: relative;
+  padding: 30px;
+}
+
+.intro {
+  width: 300px;
+  height: 220px;
+}
+
+.intro form {
+  text-align: center;
+}
+
+.intro input {
+  width: 200px;
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.intro .buttonEnter {
+  width: 200px;
+  margin: 15px auto 0;
+  background: #ccc;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.dashboard {
+  width: 600px;
+}
+
+.sectionTodo {
+  width: 260px;
+  height: 300px;
+  padding: 15px 20px;
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sectionTodo h2 {
+  font-size: 30px;
+}
+
+.sectionTodo ul {
+  margin-top: 20px;
+}
+
+.sectionTodo li {
+  position: relative;
+}
+
+.sectionTodo li + li {
+  margin-top: 15px;
+}
+
+.sectionTodo label {
+  font-size: 0;
+}
+
+.sectionTodo input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.sectionTodo input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.sectionTodo input[type="checkbox"]:checked + span::before {
+  background-color: #eee;
+  border-top: 2px solid #808080;
+  border-right: 2px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+  border-left: 2px solid #808080;
+}
+
+.sectionTodo input[type="checkbox"]:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #bbb;
+  border-bottom: 2px solid #bbb;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sectionTodo span {
+  position: relative;
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.sectionTodo span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #ccc;
+  border-top: 2px solid #e6e6e6;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  border-left: 2px solid #e6e6e6;
+}
+
+.sectionTodo button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  background: url("../src/images/icon-bin.png") no-repeat center/15px auto;
+}
+
+.sectionGeo {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 30px;
+  right: 30px;
+  width: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionGeo .folder {
+  width: 115px;
+  height: 100px;
+  border: 1px solid #000;
+}
+
+.sectionGeo .folder.weather span {
+  background-image: url("../src/images/icon-weather.png");
+  background-size: 43px auto;
+}
+
+.sectionGeo .folder span {
+  display: block;
+  padding-top: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  background: url("../src/images/icon-location.png") no-repeat center top 15px/40px auto;
+}
+
+.sectionTodoAdd {
+  position: absolute;
+  top: 170px;
+  right: 30px;
+}
+
+.sectionTodoAdd input {
+  width: 250px;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.sectionTodoAdd button {
+  width: 250px;
+  margin-top: 10px;
+  background: #ccc;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.sectionClock {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.sectionClock .clock {
+  font-size: 50px;
+}

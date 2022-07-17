@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Desktop</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="intro windows windowsBorder">
+      <div class="windowsHeader">
+        <p>Login</p>
+        <i></i>
+      </div>
+      <div class="windowsContents">
+        <form id="loginForm">
+          <label>
+            <h2>What's your name?</h2>
+            <input type="text" required />
+          </label>
+          <button class="buttonEnter windowsBorder">Enter</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="dashboard windows windowsBorder hidden">
+      <div class="windowsHeader">
+        <h1><span class="username"></span>'s Desktop</h1>
+        <i></i>
+      </div>
+      <div class="windowsContents">
+        <section class="sectionTodo">
+          <h2>Today's Agenda</h2>
+          <ul class="todoList"></ul>
+        </section>
+
+        <section class="sectionGeo">
+          <div class="folder location">
+            <span></span>
+          </div>
+          <div class="folder weather">
+            <span></span>
+          </div>
+        </section>
+
+        <section class="sectionTodoAdd">
+          <form id="todoForm">
+            <input type="text" required />
+            <button class="windowsBorder">Add a to-do</button>
+          </form>
+        </section>
+
+        <section class="sectionClock">
+          <div class="clock"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/api.js"></script>
+  <script src="js/intro.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/status.js"></script>
+</body>
+</html>
