@@ -2,9 +2,9 @@ const CLASS_HIDDEN = 'hidden';
 const CLASS_WRAPDASH = 'wrapperDash';
 const KEY_USERNAME = 'username';
 const images = [
-  "src/images/0.jpg",
-  "src/images/1.jpg",
-  "src/images/2.jpg"
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg"
 ];
 
 const wrapper = document.querySelector('.wrapper');

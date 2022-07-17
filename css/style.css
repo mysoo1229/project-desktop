@@ -249,7 +249,7 @@ input:focus {
   width: 20px;
   height: 20px;
   margin-left: 5px;
-  background: url("../src/images/icon-bin.png") no-repeat center/15px auto;
+  background: url("../images/icon-bin.png") no-repeat center/15px auto;
 }
 
 .sectionGeo {
@@ -272,7 +272,7 @@ input:focus {
 }
 
 .sectionGeo .folder.weather span {
-  background-image: url("../src/images/icon-weather.png");
+  background-image: url("../images/icon-weather.png");
   background-size: 43px auto;
 }
 
@@ -281,7 +281,7 @@ input:focus {
   padding-top: 70px;
   text-align: center;
   text-transform: uppercase;
-  background: url("../src/images/icon-location.png") no-repeat center top 15px/40px auto;
+  background: url("../images/icon-location.png") no-repeat center top 15px/40px auto;
 }
 
 .sectionTodoAdd {
